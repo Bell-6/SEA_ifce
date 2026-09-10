@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.maint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainlogin {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bannerdiv {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 45%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.direita {
+    width: 40%;
+}
+
+.sele {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.personas {
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.escolha {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 90px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.escolha:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.foto1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    width: 60px;
+    height: 60px;
+}
+
+.imges {
+    height: 80%;
+}
+
+.divtext {
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/TelaCad1Doc.css">
+    <title>Cadastro - Seus Dados</title>
+</head>
+<body>
+
+    <main>
+        <div class="divmain">
+
+            <div class="esquerda">
+                <img src="../../../assets/Banner.png" class="banner" alt="Banner do IFCE">
+            </div>
+
+            <div class="direita">
+
+                <div class="titulo">
+                    <a href="TelaLogin.html" class="seta" aria-label="Voltar">く</a>
+                    <h2 class="seus">Seus Dados</h2>
+                </div>
+
+                <form id="formCad1">
+                    <div class="divinput">
+                        <label for="nome"><h3>Nome de usuário</h3></label>
+                        <input type="text" id="nome" name="nome" placeholder="nome" required>
+                    </div>
+
+                    <div class="divinput">
+                        <label for="siape"><h3>SIAPE</h3></label>
+                        <input type="text" inputmode="numeric" id="siape" name="siape"
+                               placeholder="número de identificação" required>
+                    </div>
+
+                    <div class="divinput">
+                        <label for="senha"><h3>Senha</h3></label>
+                        <input type="password" id="senha" name="senha"
+                               placeholder="senha" autocomplete="new-password" required>
+                    </div>
+
+                    <div class="divinput">
+                        <label for="confirmar_senha"><h3>Confirmar senha</h3></label>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha"
+                               placeholder="senha" autocomplete="new-password" required>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="barra ativa"></div>
+                        <div class="barra"></div>
+                        <div class="barra"></div>
+                        <div class="barra"></div>
+                    </div>
+
+                    <button type="submit" class="butconti1doc">Continuar</button>
+
+                    <p class="jatem">
+                        Já tem uma conta?
+                        <a href="TelaLoginDoc.html"><b>Faça login</b></a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('formCad1').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const senha    = document.getElementById('senha').value;
+            const confirma = document.getElementById('confirmar_senha').value;
+
+            if (senha !== confirma) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            sessionStorage.setItem('nome',  document.getElementById('nome').value);
+            sessionStorage.setItem('siape', document.getElementById('siape').value);
+
+            window.location.href = 'TelaCad2Doc.html';
+        });
+    </script>
+</body>
+</html>

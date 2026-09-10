@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.divmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 85%;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: 80%;
+    gap: 3rem;
+}
+
+.check {
+    width: 20%;
+    height: 20%;
+}
+
+.cadfinali {
+    font-weight: bold;
+}
+
+.direita p {
+    font-weight: 200;
+}
+
+.butpaginical {
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: #BABABA;
+    width: 45%;
+    margin-top: 5%;
+    padding: 13px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.butpaginical:hover {
+    background-color: #a0a0a0;
+}

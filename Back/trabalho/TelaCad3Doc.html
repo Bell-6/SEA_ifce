@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/TelaCad3Doc.css">
+    <title>Cadastro - Recuperação</title>
+</head>
+<body>
+
+    <main>
+        <div class="divmain">
+
+            <div class="esquerda">
+                <img src="../../../assets/Banner.png" class="banner" alt="Banner do IFCE">
+            </div>
+
+            <div class="direita">
+
+                <div class="titulo">
+                    <h2 class="tituloh2">Recuperação</h2>
+                    <p class="padicione">
+                        Adicione um email caso precise <br> recuperar sua senha em breve.
+                    </p>
+                </div>
+
+                <form id="formCad3">
+                    <h4 class="emailh4">
+                        <label for="email">Email de recuperação</label>
+                    </h4>
+                    <input type="email" id="email" name="email" required>
+
+                    <div class="progresso">
+                        <div class="barra"></div>
+                        <div class="barra"></div>
+                        <div class="barra ativa"></div>
+                        <div class="barra"></div>
+                    </div>
+
+                    <button type="submit" class="butcontidoc">Continuar</button>
+
+                    <p class="jatem">
+                        Já tem uma conta?
+                        <a href="TelaLoginDoc.html"><b>Faça login</b></a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('formCad3').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            sessionStorage.setItem('email', document.getElementById('email').value);
+
+            window.location.href = 'TelaCad4Doc.html';
+        });
+    </script>
+</body>
+</html>

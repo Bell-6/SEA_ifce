@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/TelaCad2Doc.css">
+    <title>Cadastro - Perfil</title>
+</head>
+<body>
+
+    <main>
+        <div class="divmain">
+
+            <div class="esquerda">
+                <img src="../../../assets/Banner.png" class="banner" alt="Banner do IFCE">
+            </div>
+
+            <div class="direita">
+
+                <div class="titulo">
+                    <a href="TelaCad1Doc.html" class="seta" aria-label="Voltar">く</a>
+                    <h2 class="perfil">Perfil</h2>
+                </div>
+
+                <form id="formCad2">
+                    <div class="divcirculo">
+                        <div class="circulo"></div>
+                        <button type="button" class="iconbut" aria-label="Adicionar foto">
+                            <img src="../../../assets/camera.png" alt="Câmera">
+                        </button>
+                    </div>
+
+                    <textarea id="descricao" name="descricao" rows="4"
+                              placeholder="Descrição" required></textarea>
+
+                    <input type="text" id="cargo" name="cargo" placeholder="cargo">
+
+                    <div class="progresso">
+                        <div class="barra"></div>
+                        <div class="barra ativa"></div>
+                        <div class="barra"></div>
+                        <div class="barra"></div>
+                    </div>
+
+                    <button type="submit" class="butcontidoc">Continuar</button>
+
+                    <p class="jatem">
+                        Já tem uma conta?
+                        <a href="TelaLoginDoc.html"><b>Faça login</b></a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('formCad2').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            sessionStorage.setItem('descricao', document.getElementById('descricao').value);
+            sessionStorage.setItem('cargo',     document.getElementById('cargo').value);
+
+            window.location.href = 'TelaCad3Doc.html';
+        });
+    </script>
+</body>
+</html>
