@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação - Discente</title>
+    <link rel="stylesheet" href="TelaCad3Dis.css">
+</head>
+<body>
+    <main>
+        <div class="divmain">
+            <div class="esquerda">
+                <img src="../../../assets/Banner.png" class="banner" alt="Banner">
+            </div>
+
+            <div class="direita">
+                <div class="titulo">
+                    <a href="TelaCad2Dis.html" class="seta">く</a>
+                    <h2 class="tituloh2">Recuperação</h2>
+                    <p class="padicione">Adicione um email caso precise <br> recuperar sua senha em breve.</p>
+                </div>
+
+                <form id="formCad3Dis">
+                    <h4 class="emailh4">Email de recuperação</h4>
+                    <input type="email" id="email" name="email" required>
+
+                    <div class="progresso">
+                        <div class="barra"></div>
+                        <div class="barra"></div>
+                        <div class="barra ativa"></div>
+                        <div class="barra"></div>
+                    </div>
+
+                    <button type="submit" class="butcontidoc">Continuar</button>
+
+                    <p class="jatem">Já tem uma conta? 
+                        <a href="TelaLoginDis.html"><b>Faça login</b></a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('formCad3Dis').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            sessionStorage.setItem('email', document.getElementById('email').value);
+
+            window.location.href = 'TelaCad4Dis.html';
+        });
+    </script>
+</body>
+</html>

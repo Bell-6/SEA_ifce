@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Discente</title>
+    <link rel="stylesheet" href="TelaCad2Dis.css">
+</head>
+<body>
+    <main>
+        <div class="divmain">
+            <div class="esquerda">
+                <img src="../../../assets/Banner.png" class="banner" alt="Banner">
+            </div>
+
+            <div class="direita">   
+                <div class="titulo">
+                    <a href="TelaCad1Dis.html" class="seta">く</a>
+                    <h2 class="perfil">Perfil</h2>
+                </div>
+
+                <form id="formCad2Dis">
+                    <div class="divcirculo">
+                        <div class="circulo"></div>
+                        <button type="button" class="iconbut" onclick="document.getElementById('fotoInput').click()">
+                            <img src="../../../assets/camera.png" alt="Câmera">
+                        </button>
+                        <input type="file" id="fotoInput" accept="image/*" style="display:none;">
+                    </div>
+
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Descrição" required></textarea>
+
+                    <div class="inputs">
+                        <input type="text" id="semestre" name="semestre" placeholder="semestre">
+                        <input type="text" id="curso" name="curso" placeholder="curso">
+                    </div>
+
+                    <div class="progresso">
+                        <div class="barra"></div>
+                        <div class="barra ativa"></div>
+                        <div class="barra"></div>
+                        <div class="barra"></div>
+                    </div>
+
+                    <button type="submit" class="butcontidoc">Continuar</button>
+
+                    <p class="jatem">Já tem uma conta? 
+                        <a href="TelaLoginDis.html"><b>Faça login</b></a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('formCad2Dis').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            sessionStorage.setItem('descricao', document.getElementById('descricao').value);
+            sessionStorage.setItem('semestre', document.getElementById('semestre').value);
+            sessionStorage.setItem('curso', document.getElementById('curso').value);
+
+            window.location.href = 'TelaCad3Dis.html';
+        });
+    </script>
+</body>
+</html>

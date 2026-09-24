@@ -1,0 +1,23 @@
+.botao-voltar {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.butentrardoc {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.butentrardoc:hover {
+    background-color: #ddd;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

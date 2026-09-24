@@ -1,0 +1,30 @@
+
+.seta {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.butconti1doc,
+.butcontidoc,
+.butpaginical {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.butconti1doc:hover,
+.butcontidoc:hover {
+    background-color: #ddd;
+}
+
+
+.jatem a:hover,
+.naotem a:hover,
+.pesqueceu a:hover {
+    text-decoration: underline;
+}
+
+.iconbut {
+    cursor: pointer;
+}

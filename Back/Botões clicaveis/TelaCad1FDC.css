@@ -1,0 +1,31 @@
+/* Tornar seta clicável */
+.seta {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botões com cursor */
+.butconti1doc,
+.butcontidoc,
+.butpaginical {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.butconti1doc:hover,
+.butcontidoc:hover {
+    background-color: #ddd;
+}
+
+/* Links sublinhados no hover */
+.jatem a:hover,
+.naotem a:hover,
+.pesqueceu a:hover {
+    text-decoration: underline;
+}
+
+/* Ícone da câmera */
+.iconbut {
+    cursor: pointer;
+}
