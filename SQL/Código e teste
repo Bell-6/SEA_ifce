@@ -1,0 +1,87 @@
+CREATE DATABASE IF NOT EXISTS sistema_eventos;
+
+USE sistema_eventos;
+
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    senha_hash VARCHAR(255) NOT NULL,
+    perfil ENUM('ADMIN', 'PROFESSOR', 'PARTICIPANTE') NOT NULL,
+    identificacao VARCHAR(50),
+    ativo BOOLEAN NOT NULL DEFAULT TRUE,
+    data_cadastro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE categorias (
+    id_categoria INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL UNIQUE,
+    descricao VARCHAR(255)
+);
+
+
+
+CREATE TABLE eventos (
+    id_evento INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    data_evento DATE NOT NULL,
+    horario TIME NOT NULL,
+    local VARCHAR(150) NOT NULL,
+    descricao TEXT,
+    tipo_evento VARCHAR(50) NOT NULL,
+    limite_inscricoes INT NOT NULL,
+    status ENUM('ATIVO', 'CANCELADO', 'REALIZADO') 
+        NOT NULL DEFAULT 'ATIVO',
+    id_criador INT NOT NULL,
+    id_categoria INT,
+
+    CONSTRAINT fk_evento_criador
+        FOREIGN KEY (id_criador)
+        REFERENCES usuarios(id_usuario),
+
+    CONSTRAINT fk_evento_categoria
+        FOREIGN KEY (id_categoria)
+        REFERENCES categorias(id_categoria)
+);
+
+
+
+SHOW TABLES;
+
+
+USE sistema_eventos;
+
+SHOW TABLES; 
+
+DESCRIBE usuarios;
+DESCRIBE categorias;
+DESCRIBE eventos; 
+
+INSERT INTO usuarios
+(nome, email, senha_hash, perfil, identificacao)
+VALUES
+('Iasmim', 'iasmim@email.com', '123456', 'PARTICIPANTE', '001'); 
+
+INSERT INTO usuarios
+(nome, email, senha_hash, perfil, identificacao)
+VALUES
+('Evellyn', 'evellyn@email.com', '1234567', 'PARTICIPANTE', '002'); 
+
+INSERT INTO usuarios
+(nome, email, senha_hash, perfil, identificacao)
+VALUES
+('Samaya', 'samaya@email.com', '12345678', 'PARTICIPANTE', '003'); 
+
+INSERT INTO usuarios
+(nome, email, senha_hash, perfil, identificacao)
+VALUES
+('Evellyn', 'evellyn@email.com', '1234567', 'PARTICIPANTE', '002'),
+('Samaya', 'samaya@email.com', '12345678', 'PARTICIPANTE', '003');
+
+USE sistema_eventos;
+
+
+SELECT * FROM usuarios;
