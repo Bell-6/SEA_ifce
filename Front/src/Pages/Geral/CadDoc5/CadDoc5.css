@@ -1,0 +1,35 @@
+.CadDoc5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 65vh;
+    gap: 2rem;
+
+    & img {
+        width: 30%;
+        height: 27%;
+    }
+
+    & h2 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    & p {
+        font-family: 'Sora', sans-serif;
+    }
+
+    & button {
+        width: 70%;
+        padding: 10px;
+        margin-top: 2rem;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 15px;
+        font-size: x-large;
+        font-weight: bold;
+        background-color: #65DE7C;
+        cursor: pointer;
+    }
+}

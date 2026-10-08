@@ -1,0 +1,71 @@
+.CadDoc4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 90vh;
+    border: 1px solid black;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    & h1 {
+        font-family: 'Sora', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    & h2 {
+        font-family: 'Sora', sans-serif;
+        margin-top: 1rem;
+    }
+
+    & p {
+        font-family: 'Sora', sans-serif;
+        margin-top: 10px;
+    }
+
+    & Button {
+        width: 70%;
+        margin-top: 3rem;
+    }
+}
+
+.enviamos {
+    text-align: center;
+}
+
+.inputscod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+    
+    & input {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 20px;
+        
+    }
+}
+
+.as {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    & a {
+        color: #006D92;
+        text-decoration: underline;
+    }
+}
+
+

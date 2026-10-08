@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fuzzy+Bubbles&family=Gloock&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Onest:wght@100..900&family=Outfit:wght@100..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Sora:wght@100..800&display=swap');
+
+.CadDoc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 420px;
+    padding: 10px;
+    gap: 12px;
+
+    & h1 {
+        font-family: "Sora", sans-serif;
+    }
+
+    & p {
+        font-family: "Sora", sans-serif;
+    }
+}
+
+.barras {
+    display: flex;
+    gap: 8px;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.barra {
+    flex: 1;
+    min-height: 2px;
+    border-radius: 10px;
+    background-color: rgb(70 70 70 / 18%);
+}
+
+.barra.ativa {
+    background-color: #34BFE8;
+}
+
+.formcad {
+    width: 90%;
+    margin-left: 2rem;
+
+    & p {
+        margin-left: 10px;
+    }
+
+    & input {
+        width: 90%;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+input[id="2"]
+
+{
+    width: 90%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.continuar {
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #65DE7C;
+    cursor: pointer;
+}
+
+.pjatem {
+    margin-top: 10px;
+}
