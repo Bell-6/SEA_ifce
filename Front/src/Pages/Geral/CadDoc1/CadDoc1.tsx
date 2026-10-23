@@ -4,8 +4,6 @@ import './CadDoc1.css'
 import {Link} from 'react-router-dom'
 import Banner from "../../../assets/banner.png"
 
-
-
 function CadDoc1() {
     return (
         <main>

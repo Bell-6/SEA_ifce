@@ -1,21 +1,22 @@
 import './Layout.css'
 import icon from '../../assets/1 1.png'
+import {Outlet} from 'react-router-dom'
 import {Search, Bell, User, Menu, House, Plus, CircleQuestionMark, Settings} from 'lucide-react'
 
 
-export default function Layout({Children }: {Children: React.ReactNode }) {
+export default function Layout() {
     return (
         <>
             <div className='layout'>
                 <aside>
-                    <Menu />
-                    <House />
-                    <Plus />
+                    <Menu size={30} className='menu'/>
+                    <House size={30}/>
+                    <Plus size={30}/>
 
-                    <div></div>
+                    <div className='barraaside'></div>
 
-                    <CircleQuestionMark />
-                    <Settings />
+                    <CircleQuestionMark size={30}/>
+                    <Settings  size={30}/>
                 </aside>
 
                 <div className='divlayout'>
@@ -40,9 +41,9 @@ export default function Layout({Children }: {Children: React.ReactNode }) {
         
                     </header>
 
-                    <main>
-                        {Children}
-                    </main>
+                    <div className='conteudo'>
+                        <Outlet />
+                    </div>
 
                 </div>
             </div>

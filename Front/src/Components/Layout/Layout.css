@@ -11,9 +11,9 @@ aside {
     flex-direction: column;
     grid-column: 1;
     grid-row: 1;
-    height: 100vh;
-    border: 5px solid rgb(241, 12, 12);
-    gap: 2rem;
+    background-color: rgb(101 222 124 / 6%);
+    border: 1px solid rgb(101 222 124 / 85%);
+    gap: 3rem;
 }
 
 .divlayout {
@@ -27,20 +27,17 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border: 3px solid rgb(19, 236, 30);
 }
 
 .headerl {
     display: flex;
     align-items: center;
-    border: 1px solid black;
 }
 
 .headerr {
     display: flex;
     margin-right: 4rem;
     gap: 4rem;
-    border: 1px solid black;
 }
 
 nav {
@@ -48,6 +45,17 @@ nav {
     margin-left: 5rem;
     gap: 3rem;
     color: rgb(0 0 0 / 67%);
+}
+
+.menu {
+    margin-top: 2rem
+}
+
+.barraaside {
+    height: 1px;
+    width: 60%;
+    margin-top: 50%;
+    border: 1px solid rgb(101 222 124 / 43%);
 }
 
 main {
