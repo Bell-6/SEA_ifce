@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.config-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    font-family: "Sora", sans-serif;
+    color: #323633;
+    box-sizing: border-box;
+}
+
+.config-container {
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    min-height: 450px;
+    gap: 2rem;
+}
+
+/* MENU LATERAL */
+
+.config-menu {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    min-width: 180px;
+    border-right: 1px solid #e5e5e5;
+    padding-right: 15px;
+}
+
+.config-menu h3 {
+    font-size: 12px;
+    margin: 0 0 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.config-menu h3 span {
+    margin-left: 8px;
+}
+
+.config-menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    text-align: left;
+    cursor: pointer;
+    color: #555;
+}
+
+.config-menu button:hover, .config-menu button.menu-ativo {
+    background-color: rgba(101, 222, 124, 0.15);
+    color: #006d92;
+}
+
+.config-menu-final {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.config-menu .sair-conta {
+    color: #e34b4b;
+}
+
+.config-menu .excluir-conta {
+    color: #555;
+}
+
+/* CONTEÚDO */
+
+.config-conteudo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    padding: 5px 10px;
+}
+
+.config-conteudo h2 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.config-subtitulo {
+    font-size: 10px;
+    color: #888;
+    margin: 0 0 20px;
+}
+
+/* PERFIL */
+
+.perfil-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    max-width: 650px;
+    min-height: 145px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.perfil-foto {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    min-width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: rgba(101, 222, 124, 0.15);
+    color: #65c97a;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.perfil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-foto input {
+    display: none;
+}
+
+.foto-editar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #65de7c;
+    color: white;
+    border-radius: 50%;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.perfil-info h3 {
+    font-size: 14px;
+    margin: 0 0 3px;
+}
+
+.perfil-info p {
+    font-size: 10px;
+    color: #888;
+    margin: 0 0 8px;
+}
+
+.perfil-info .perfil-descricao {
+    max-width: 450px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.btn-editar {
+    align-self: flex-end;
+    padding: 7px 15px;
+    background-color: #65de7c;
+    border: none;
+    border-radius: 7px;
+    color: #244b2d;
+    font-family: "Sora", sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* FORMULÁRIOS */
+
+.perfil-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 9px;
+    min-width: 0;
+}
+
+.campo-config {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.campo-config label {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.campo-config input, .campo-config textarea, .campo-config select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    font-family: "Sora", sans-serif;
+    font-size: 10px;
+    background-color: white;
+}
+
+.campo-config input:focus, .campo-config textarea:focus, .campo-config select:focus {
+    border-color: #33bfe8;
+}
+
+.campo-config textarea {
+    min-height: 65px;
+    resize: vertical;
+}
+
+.botoes-perfil, .botoes-conta {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.btn-cancelar, .btn-salvar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 7px;
+    font-family: "Sora", sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background-color: #d8f3fa;
+    color: #006d92;
+}
+
+.btn-salvar {
+    background-color: #65de7c;
+    color: #244b2d;
+}
+
+.btn-cancelar:hover {
+    background-color: #c5eaf4;
+}
+
+.btn-salvar:hover {
+    background-color: #4dcc66;
+}
+
+/* TOGGLE */
+
+.config-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin-top: 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.config-toggle input {
+    display: none;
+}
+
+.toggle-visual {
+    position: relative;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #ccc;
+    transition: 0.2s;
+}
+
+.toggle-visual::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.config-toggle input:checked + .toggle-visual {
+    background-color: #33bfe8;
+}
+
+.config-toggle input:checked + .toggle-visual::after {
+    left: 17px;
+}
+
+/* CONTA */
+
+.conta-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.conta-card .botoes-conta {
+    grid-column: 1 / -1;
+}
+
+.senha-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding-right: 8px;
+}
+
+.senha-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+}
+
+.senha-input button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: #888;
+    cursor: pointer;
+}
+
+/* NOTIFICAÇÕES */
+
+.notificacoes-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.notificacao-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 5px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.notificacao-item:last-child {
+    border-bottom: none;
+}
+
+.notificacao-item span {
+    flex: 1;
+}
+
+.notificacao-item input {
+    appearance: none;
+    position: relative;
+    width: 28px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.notificacao-item input::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.notificacao-item input:checked {
+    background-color: #65de7c;
+}
+
+.notificacao-item input:checked::after {
+    left: 15px;
+}
+
+/* SOBRE */
+
+.sobre-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 650px;
+    min-height: 180px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.sobre-card .campo-config {
+    max-width: 300px;
+}
+
+.sobre-card select {
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+    .config-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .config-container {
+        gap: 10px;
+    }
+
+    .config-menu {
+        width: 115px;
+        min-width: 115px;
+        padding-right: 7px;
+    }
+
+    .config-menu button {
+        gap: 5px;
+        padding: 8px 4px;
+        font-size: 9px;
+    }
+
+    .config-menu h3 {
+        font-size: 10px;
+    }
+
+    .config-conteudo {
+        padding: 5px;
+    }
+
+    .perfil-card {
+        flex-direction: column;
+    }
+
+    .conta-card {
+        grid-template-columns: 1fr;
+    }
+
+    .conta-card .botoes-conta {
+        grid-column: auto;
+    }
+
+    .config-conteudo h2 {
+        font-size: 15px;
+    }
+}

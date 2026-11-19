@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.criacao-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 1rem;
+    font-family: "Sora", sans-serif;
+    color: #323633;
+    box-sizing: border-box;
+}
+
+.criacao-container {
+    width: 100%;
+    max-width: 70rem;
+    background-color: white;
+    border: 1px solid rgba(101, 222, 124, 0.25);
+    border-radius: 12px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.form-criacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.form-criacao h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 8px 0 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    min-width: 0;
+}
+
+.campo label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.campo input, .campo textarea, .campo select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c9c9c9;
+    border-radius: 9px;
+    padding: 9px 11px;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    outline: none;
+    background-color: white;
+    color: #323633;
+}
+
+.campo input:focus, .campo textarea:focus, .campo select:focus {
+    border-color: #33bfe8;
+}
+
+.campo input::placeholder, .campo textarea::placeholder {
+    color: #aaa;
+}
+
+.campo textarea {
+    height: 95px;
+    resize: vertical;
+}
+
+/* GERAL */
+
+.geral-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    width: 100%;
+}
+
+.upload-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 145px;
+    min-width: 145px;
+    height: 145px;
+    background-color: rgba(101, 222, 124, 0.09);
+    border: 1px dashed #a6cbb0;
+    border-radius: 9px;
+    color: #9caea0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.upload-imagem span {
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.upload-imagem input {
+    display: none;
+}
+
+.upload-imagem:hover {
+    background-color: rgba(101, 222, 124, 0.16);
+}
+
+.campos-gerais {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+    min-width: 0;
+}
+
+/* LOCAL, DATA E HORÁRIO */
+
+.campo-local {
+    width: 100%;
+}
+
+.input-icone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c9c9c9;
+    border-radius: 9px;
+    padding: 0 10px;
+    color: #33bfe8;
+}
+
+.input-icone input {
+    border: none;
+    padding: 9px 0;
+    min-width: 0;
+}
+
+.input-icone input:focus {
+    border: none;
+}
+
+.linha-data {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.8fr 0.8fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.linha-data input {
+    min-width: 0;
+    padding: 9px 5px;
+    font-size: 10px;
+}
+
+/* DETALHES ADICIONAIS */
+
+.vagas-campo {
+    width: 65%;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 3px 0;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.opcoes input {
+    accent-color: #33bfe8;
+    cursor: pointer;
+}
+
+.tipo-campo {
+    width: 55%;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.select-container select {
+    appearance: none;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.select-container svg {
+    position: absolute;
+    right: 10px;
+    color: #33bfe8;
+    pointer-events: none;
+}
+
+/* AÇÕES ADICIONAIS */
+
+.adicionar-subevento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #33bfe8;
+    border-radius: 9px;
+    color: #555;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.adicionar-subevento svg {
+    color: #33bfe8;
+}
+
+/* SUBEVENTOS */
+
+.subevento-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #8bd6ef;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subevento-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subevento-titulo h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.remover-subevento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: #e45d5d;
+    cursor: pointer;
+}
+
+.subevento-geral {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.subevento-campos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    min-width: 0;
+}
+
+.subevento-campos textarea {
+    height: 90px;
+}
+
+.subevento-upload {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+}
+
+.subevento-card h4 {
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+.subevento-card .vagas-campo {
+    width: 65%;
+}
+
+.salvar-subevento {
+    align-self: center;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 9px;
+    background-color: #33bfe8;
+    color: white;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.salvar-subevento:hover {
+    background-color: #1ba9d2;
+}
+
+/* PUBLICAR EVENTO */
+
+.publicar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.publicar-evento {
+    padding: 10px 22px;
+    background-color: #65de7c;
+    border: none;
+    border-radius: 10px;
+    color: #244b2d;
+    font-family: "Sora", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.publicar-evento:hover {
+    background-color: #4dcc66;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+    .criacao-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .criacao-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .geral-container, .subevento-geral {
+        flex-direction: column;
+    }
+
+    .upload-imagem, .subevento-upload {
+        width: 100%;
+        min-width: 0;
+        height: 110px;
+    }
+
+    .linha-data {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vagas-campo, .tipo-campo {
+        width: 100%;
+    }
+
+    .opcoes {
+        gap: 10px;
+    }
+}

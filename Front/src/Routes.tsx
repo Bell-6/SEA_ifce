@@ -9,6 +9,8 @@ import CadDoc4 from './Pages/Geral/CadDoc4/CadDoc4'
 import CadDoc5 from './Pages/Geral/CadDoc5/CadDoc5'
 import Home from './Pages/Docente/Home/Home'
 import Teladeevento from './Pages/Docente/Teladeevento/Teladeevento'
+import Criacao from './Pages/Docente/Criacao/Criacao'
+import Settings from './Pages/Docente/Settings/Settings'
 
 function Router() {
     return (
@@ -27,6 +29,8 @@ function Router() {
                 <Route element={<Layout />}>
                     <Route path='/Home' element={<Home />}></Route>
                     <Route path='/Teladeevento' element={<Teladeevento />}></Route>
+                    <Route path='Criacao' element={<Criacao />}></Route>
+                    <Route path='Settings' element={<Settings />}></Route>
                 </Route>
 
                 <Route path='*' element={<h1>Not found</h1>} />
